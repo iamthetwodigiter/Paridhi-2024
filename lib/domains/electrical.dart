@@ -32,7 +32,7 @@ class Electrical extends StatelessWidget {
       ),
       drawer: DrawerMenu(
         title: 'Domains',
-        amount: 6,
+        amount: 7,
         option: const [
           'Coding',
           'Manual Robotics',

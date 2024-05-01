@@ -43,7 +43,7 @@ class Merchandise extends StatelessWidget {
           () => const Domains(),
           () => const Workshop(),
           () => const PreParidhiEvents(),
-          () => MembersPage(),
+          () => const MembersPage(),
           () => const Register(),
         ],
       ),
@@ -85,6 +85,34 @@ class Merchandise extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 20),
+                      RichText(
+                        text: const TextSpan(
+                          children: [
+                            TextSpan(
+                              text: 'Rs 349',
+                              style: TextStyle(
+                                decoration: TextDecoration.lineThrough,
+                                decorationColor: Colors.white,
+                                decorationThickness: 2.0,
+                                color: Colors.red,
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'Mega',
+                              ),
+                            ),
+                            TextSpan(
+                              text: '    Rs 299',
+                              style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'Mega',
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 20),
                       const OpenLink(
                           url: 'https://forms.gle/ms67u7MocZEnPJGP7',
                           asset: 'Buy Now'),
@@ -119,6 +147,33 @@ class Merchandise extends StatelessWidget {
                             Image.asset('assets/merch/black-front.png'),
                             const SizedBox(width: 20),
                             Image.asset('assets/merch/black-back.png'),
+                          ],
+                        ),
+                      ),const SizedBox(height: 20),
+                      RichText(
+                        text: const TextSpan(
+                          children: [
+                            TextSpan(
+                              text: 'Rs 349',
+                              style: TextStyle(
+                                decoration: TextDecoration.lineThrough,
+                                decorationColor: Colors.white,
+                                decorationThickness: 2.0,
+                                color: Colors.red,
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'Mega',
+                              ),
+                            ),
+                            TextSpan(
+                              text: '    Rs 299',
+                              style: TextStyle(
+                                color: Colors.red,
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'Mega',
+                              ),
+                            ),
                           ],
                         ),
                       ),

@@ -6,7 +6,7 @@ void _launchURL(String url, BuildContext context) async {
   if (url != 'null') {
     try {
       if (await canLaunchUrl(link)) {
-        await launchUrl(link, mode: LaunchMode.platformDefault);
+        await launchUrl(link, mode: LaunchMode.externalApplication);
       } else {
         throw 'Could not launch $url';
       }
@@ -61,7 +61,7 @@ class OpenLink extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => url.contains('gmail.com')
+      onTap: () => url.contains('@gmail.com')
           ? _launchGmail(url)
           : _launchURL(url, context),
       child: asset.contains('assets')
